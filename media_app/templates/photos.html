@@ -1,12 +1,17 @@
 <h1>Photo Gallery</h1>
 
-<img src="https://unsplash.com/photos/black-and-white-cat-on-wall-LO0-DMO7-Ro" width="300" alt="Image 1">
-<img src="https://unsplash.com/photos/people-walking-on-palm-lined-path-uJZCEiARRlw" width="300" alt="Image 2">
-<img src="https://unsplash.com/photos/living-room-with-fireplace-and-beams-HCzMheZCyyQ" width="300" alt="Image 3">
-<img src="https://unsplash.com/photos/yasaka-pagoda-view-from-kyoto-balcony-v2MrtvdsIjg" width="300" alt="Image 4">
-<img src="https://unsplash.com/photos/stone-cottage-in-the-cotswolds-FNulsVaXHLE" width="300" alt="Image 5">
-<img src="https://unsplash.com/photos/family-eating-ice-cream-at-theater-B_E9MBWu9yw" width="300" alt="Image 6">
-<img src="https://unsplash.com/photos/man-and-child-inside-a-tractor-cab-KKbMrKMmb1g" width="300" alt="Image 7">
-<img src="https://unsplash.com/photos/a-table-topped-with-plates-of-food-and-drinks-ml49hEv55WI" width="300" alt="Image 8">
-<img src="https://unsplash.com/photos/manarola-italy-rknrvCrfS1k" width="300" alt="Image 9" >
-<img src="https://unsplash.com/photos/a-train-travels-across-a-viaduct-in-a-lush-jungle--E7dpukTajA" width="300" alt="Image 10">
+{% load static %}
+
+<img src="{% static 'images/cool.jpg' %}" width="300" alt="Image 1">
+<img src="{% static 'images/boats.jpg' %}" width="300" alt="Image 2">
+<img src="{% static 'images/library.jpg' %}" width="300" alt="Image 3">
+<img src="{% static 'images/restaurant.jpg' %}" width="300" alt="Image 4">
+<img src="{% static 'images/street.jpg' %}" width="300" alt="Image 5">
+
+<hr>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/photos/">Photos</a> |
+        <a href="/videos/">Videos</a>
+    </nav>
